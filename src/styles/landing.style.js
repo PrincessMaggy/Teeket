@@ -6,12 +6,11 @@ import { fontSizes } from "../utility/themes/sizes";
 export const LandingStyles = StyleSheet.create({
   bgImageContainer: {
     flex: 1,
-    resizeMode: "stretch",
     alignContent: "center",
     alignItems: "center",
     minHeight: Dimensions.get("window").height,
+    minWidth: Dimensions.get("window").width,
     gap: spacing.lg,
-    paddingTop: spacing.xxxl,
   },
   overlayView: {
     position: "absolute",
@@ -23,17 +22,37 @@ export const LandingStyles = StyleSheet.create({
       "linearGradient(180deg,rgba(3, 10, 46, 0.71) 0.01%, rgba(5, 12, 47, 0) 141.96%)",
   },
   logo: {
-    width: Dimensions.get("window").width,
-    height: 90,
-    marginBottom: spacing.lg,
+    height: 200,
+    width: 200,
   },
   btn: {
     backgroundColor: colorTheme.brand.primary,
-    height: 100,
+    height: 50,
+    fontSize: fontSizes.lg,
+    padding: spacing.sm / 2,
+    borderRadius: 10,
+  },
+  btnval: {
+    backgroundColor: colorTheme.bg.primary,
+    height: 50,
+    fontSize: fontSizes.lg,
+    padding: spacing.sm / 2,
+    borderRadius: 10,
   },
   paragraph: {
     color: colorTheme.text.inverse,
-    fontSize: fontSizes.md,
     marginTop: spacing.md,
+    fontSize: fontSizes.md,
+    textAlign: "center",
+  },
+  textContainer: {
+    paddingHorizontal: spacing.lg,
+    textAlign: "center",
+  },
+  centeredContainer: {
+    alignItems: "center",
+    maxWidth: Dimensions.get("window").width,
+    padding: spacing.md,
+    textAlign: "center",
   },
 });

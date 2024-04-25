@@ -4,9 +4,9 @@ import { Landing } from "./src/screens/Landing.screen";
 
 export default function App() {
   return (
-    <SafeAreaView style={{ flex: 1, marginTop: StatusBar.currentHeight }}>
+    <SafeAreaView style={{ flex: 1 }}>
       <View style={styles.container}>
-        <Landing />
+        <Home />
         <StatusBar style="auto" />
       </View>
     </SafeAreaView>
