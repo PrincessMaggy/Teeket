@@ -6,15 +6,11 @@ export const HomeStyles = StyleSheet.create({
   screenContainer: {
     margin: 0,
   },
-  headerContainer: {
-    flex: 1,
-    flexDirection: "row",
-    justifyContent: "space-between",
-  },
   title: {
     fontWeight: 700,
     fontSize: 20,
     marginTop: spacing.sm,
+    marginBottom: spacing.sm,
   },
   mainContainer: {
     padding: spacing.sm,
@@ -39,12 +35,6 @@ export const HomeStyles = StyleSheet.create({
     height: spacing.xxl,
     gap: spacing.md,
   },
-  btn: {
-    backgroundColor: colorTheme.brand.tertiary,
-    height: 50,
-    padding: spacing.sm / 2,
-    borderRadius: 10,
-  },
   btnEmail: {
     backgroundColor: colorTheme.brand.primary,
     width: 300,
@@ -65,40 +55,6 @@ export const HomeStyles = StyleSheet.create({
     marginTop: spacing.md,
     textAlign: "center",
     color: colorTheme.text.tertiary,
-  },
-  ctaContainer: {
-    backgroundColor: colorTheme.bg.cta,
-    color: colorTheme.text.inverse,
-    padding: spacing.lg,
-    marginTop: spacing.mxxl,
-    gap: spacing.sm,
-  },
-  textStyle: {
-    color: colorTheme.text.inverse,
-  },
-  menuView: {
-    gap: spacing.sm,
-    marginTop: spacing.sm,
-    marginBottom: spacing.sm,
-  },
-
-  contactView: {
-    flexDirection: "row",
-    gap: spacing.sm,
-  },
-  contactViewCont: {
-    gap: spacing.sm,
-    marginTop: spacing.sm,
-  },
-  policyView: {
-    gap: spacing.sm,
-    marginTop: spacing.sm,
-    marginBottom: spacing.sm,
-  },
-  hr: {
-    borderBottomColor: colorTheme.brand.muted,
-    borderBottomWidth: 1,
-    marginVertical: spacing.sm,
   },
   hr2Container: {
     flexDirection: "row",

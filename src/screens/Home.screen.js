@@ -10,21 +10,15 @@ import {
 import { colorTheme } from "../utility/themes/colors";
 import { Button } from "react-native-paper";
 import { HomeStyles } from "../styles/home.style.js";
+import { HeaderComponent } from "../components/Header.component.js";
+import { FooterComponent } from "../components/Footer.component.js";
 
 export const Home = () => {
   const [value, onChangeText] = useState("Enter your email address");
   return (
     <ScrollView>
       <View style={HomeStyles.screenContainer}>
-        <View style={HomeStyles.headerContainer}>
-          <Image source={require("../../assets/img/teeketBlueLogo.png")} />
-          <Button
-            style={HomeStyles.btn}
-            labelStyle={{ color: colorTheme.text.inverse }}
-          >
-            Menu
-          </Button>
-        </View>
+        <HeaderComponent />
         <View style={HomeStyles.mainContainer}>
           <Text style={HomeStyles.title}>Login or signup to continue</Text>
 
@@ -65,37 +59,7 @@ export const Home = () => {
             <Text style={HomeStyles.termsPolicyText}>Privacy Policy</Text>.
           </Text>
         </View>
-        <View style={HomeStyles.ctaContainer}>
-          <Image source={require("../../assets/img/CTA.png")} />
-          <View style={HomeStyles.menuView}>
-            <Text style={HomeStyles.textStyle}>MENU</Text>
-            <Text style={HomeStyles.textStyle}>For Organizers</Text>
-            <Text style={HomeStyles.textStyle}>How to create event</Text>
-            <Text style={HomeStyles.textStyle}>Event FAQs</Text>
-            <Text style={HomeStyles.textStyle}>For Attendees</Text>
-          </View>
-          <View style={HomeStyles.hr} />
-
-          <View style={HomeStyles.contactViewCont}>
-            <View style={HomeStyles.contactView}>
-              <Image source={require("../../assets/img/PhoneCall.png")} />
-              <Text style={HomeStyles.textStyle}>+234675652</Text>
-            </View>
-            <View style={HomeStyles.contactView}>
-              <Image source={require("../../assets/img/ChatDots.png")} />
-              <Text style={HomeStyles.textStyle}>teeket@gmail.com</Text>
-            </View>
-          </View>
-          <View style={HomeStyles.hr} />
-
-          <View style={HomeStyles.policyView}>
-            <Text style={HomeStyles.textStyle}>Privacy Policy</Text>
-            <Text style={HomeStyles.textStyle}>Terms of use</Text>
-            <Text style={HomeStyles.textStyle}>
-              Teeket Inc. All rights reserved.
-            </Text>
-          </View>
-        </View>
+        <FooterComponent />
       </View>
     </ScrollView>
   );
