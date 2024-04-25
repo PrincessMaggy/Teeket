@@ -19,6 +19,8 @@ export const Home = () => {
     <ScrollView>
       <View style={HomeStyles.screenContainer}>
         <HeaderComponent />
+        <View style={HomeStyles.hr} />
+
         <View style={HomeStyles.mainContainer}>
           <Text style={HomeStyles.title}>Login or signup to continue</Text>
 

@@ -5,6 +5,7 @@ import { spacing } from "../utility/themes/sizes";
 export const HomeStyles = StyleSheet.create({
   screenContainer: {
     margin: 0,
+    backgroundColor: colorTheme.bg.primary,
   },
   title: {
     fontWeight: 700,
@@ -76,5 +77,10 @@ export const HomeStyles = StyleSheet.create({
     fontWeight: "bold",
     color: colorTheme.brand.secondary,
     textDecorationLine: "underline",
+  },
+  hr: {
+    borderBottomColor: colorTheme.brand.muted,
+    borderBottomWidth: 1,
+    marginVertical: spacing.sm,
   },
 });

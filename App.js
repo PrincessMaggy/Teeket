@@ -1,23 +1,12 @@
-import { StyleSheet, SafeAreaView, StatusBar, View } from "react-native";
-import { Home } from "./src/screens/Home.screen";
-import { Landing } from "./src/screens/Landing.screen";
+import { SafeAreaView, StatusBar } from "react-native";
+
+import { MainNav } from "./src/navigation/MainNav";
 
 export default function App() {
   return (
-    <SafeAreaView style={{ flex: 1 }}>
-      <View style={styles.container}>
-        <Home />
-        <StatusBar style="auto" />
-      </View>
+    <SafeAreaView style={{ flex: 1, marginTop: StatusBar.currentHeight }}>
+      <MainNav />
+      <StatusBar backgroundColor="#ffffff" barStyle="dark-content" />
     </SafeAreaView>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-});
