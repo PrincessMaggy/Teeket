@@ -8,6 +8,7 @@ export const HeaderComponentStyles = StyleSheet.create({
     flexDirection: "row",
     justifyContent: "space-between",
     padding: spacing.sm,
+    paddingBottom: 0,
   },
   btn: {
     backgroundColor: colorTheme.brand.tertiary,

@@ -4,7 +4,7 @@ import { LandingStyles } from "../styles/landing.style";
 import { Button } from "react-native-paper";
 import { colorTheme } from "../utility/themes/colors";
 
-export const Landing = () => {
+export const Landing = ({ navigation }) => {
   return (
     <ScrollView>
       <ImageBackground
@@ -29,12 +29,14 @@ export const Landing = () => {
         <Button
           style={LandingStyles.btn}
           labelStyle={{ color: colorTheme.text.inverse }}
+          onPress={() => navigation.navigate("CreateEvent")}
         >
           Create an event
         </Button>
         <Button
           style={LandingStyles.btnval}
           labelStyle={{ color: colorTheme.brand.secondary }}
+          onPress={() => navigation.navigate("DiscoverEvents")}
         >
           Discover events
         </Button>
