@@ -31,6 +31,7 @@ export const LandingStyles = StyleSheet.create({
     fontSize: fontSizes.lg,
     padding: spacing.sm / 2,
     borderRadius: 10,
+    fontFamily: "Manrope",
   },
   btnval: {
     backgroundColor: colorTheme.bg.primary,
@@ -38,12 +39,14 @@ export const LandingStyles = StyleSheet.create({
     fontSize: fontSizes.lg,
     padding: spacing.sm / 2,
     borderRadius: 10,
+    fontFamily: "Manrope",
   },
   paragraph: {
     color: colorTheme.text.inverse,
     marginTop: spacing.md,
     fontSize: fontSizes.md,
     textAlign: "center",
+    fontFamily: "Manrope",
   },
   textContainer: {
     paddingHorizontal: spacing.lg,

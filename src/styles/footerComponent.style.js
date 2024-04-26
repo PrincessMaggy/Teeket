@@ -15,11 +15,13 @@ export const FooterComponentStyles = StyleSheet.create({
     gap: spacing.sm,
     marginTop: spacing.sm,
     marginBottom: spacing.sm,
+    fontFamily: "Manrope",
   },
   menuView: {
     gap: spacing.sm,
     marginTop: spacing.sm,
     marginBottom: spacing.sm,
+    fontFamily: "Manrope",
   },
 
   hr: {
@@ -36,5 +38,6 @@ export const FooterComponentStyles = StyleSheet.create({
   },
   textStyle: {
     color: colorTheme.text.inverse,
+    fontFamily: "Manrope",
   },
 });

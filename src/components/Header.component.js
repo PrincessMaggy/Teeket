@@ -6,14 +6,17 @@ import { colorTheme } from "../utility/themes/colors";
 
 export const HeaderComponent = () => {
   return (
-    <View style={HeaderComponentStyles.headerContainer}>
-      <Image source={require("../../assets/img/teeketBlueLogo.png")} />
-      <Button
-        style={HeaderComponentStyles.btn}
-        labelStyle={{ color: colorTheme.text.inverse }}
-      >
-        Menu
-      </Button>
-    </View>
+    <>
+      <View style={HeaderComponentStyles.headerContainer}>
+        <Image source={require("../../assets/img/teeketBlueLogo.png")} />
+        <Button
+          style={HeaderComponentStyles.btn}
+          labelStyle={{ color: colorTheme.text.inverse }}
+        >
+          Menu
+        </Button>
+      </View>
+      <View style={HeaderComponentStyles.hr} />
+    </>
   );
 };

@@ -4,7 +4,7 @@ import { spacing } from "../utility/themes/sizes";
 
 export const HeaderComponentStyles = StyleSheet.create({
   headerContainer: {
-    flex: 1,
+    // flex: 1,
     flexDirection: "row",
     justifyContent: "space-between",
     padding: spacing.sm,
@@ -15,5 +15,11 @@ export const HeaderComponentStyles = StyleSheet.create({
     height: 50,
     padding: spacing.sm / 2,
     borderRadius: 10,
+    fontFamily: "Manrope",
+  },
+  hr: {
+    borderBottomColor: colorTheme.brand.muted,
+    borderBottomWidth: 1,
+    marginVertical: spacing.sm,
   },
 });

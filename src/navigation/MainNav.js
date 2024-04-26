@@ -4,10 +4,9 @@ import AsyncStorage from "@react-native-async-storage/async-storage";
 import { NavigationContainer } from "@react-navigation/native";
 import { AppNav } from "./AppNav";
 import { View } from "react-native";
-import { colorTheme } from "../utility/themes/colors";
 
 export const MainNav = () => {
-  const [isAuthenticated, setIsAuthenticated] = useState(true);
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
 
   //   useEffect(() => {
   //     checkUserSession();

@@ -12,6 +12,7 @@ export const HomeStyles = StyleSheet.create({
     fontSize: 20,
     marginTop: spacing.sm,
     marginBottom: spacing.sm,
+    fontFamily: "Manrope",
   },
   mainContainer: {
     padding: spacing.sm,
@@ -35,12 +36,14 @@ export const HomeStyles = StyleSheet.create({
     borderRadius: spacing.sm,
     height: spacing.xxl,
     gap: spacing.md,
+    fontFamily: "Manrope",
   },
   btnEmail: {
     backgroundColor: colorTheme.brand.primary,
     width: 300,
     borderRadius: spacing.sm,
     height: spacing.xxl,
+    fontFamily: "Manrope",
   },
   inputEmail: {
     marginBottom: spacing.sm,
@@ -51,11 +54,13 @@ export const HomeStyles = StyleSheet.create({
     borderRadius: spacing.sm,
     height: spacing.xxl,
     color: colorTheme.text.tertiary,
+    fontFamily: "Manrope",
   },
   paragraph: {
     marginTop: spacing.md,
     textAlign: "center",
     color: colorTheme.text.tertiary,
+    fontFamily: "Manrope",
   },
   hr2Container: {
     flexDirection: "row",
@@ -77,10 +82,6 @@ export const HomeStyles = StyleSheet.create({
     fontWeight: "bold",
     color: colorTheme.brand.secondary,
     textDecorationLine: "underline",
-  },
-  hr: {
-    borderBottomColor: colorTheme.brand.muted,
-    borderBottomWidth: 1,
-    marginVertical: spacing.sm,
+    fontFamily: "Manrope",
   },
 });
