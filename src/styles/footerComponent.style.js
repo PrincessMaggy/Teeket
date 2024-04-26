@@ -13,6 +13,8 @@ export const FooterComponentStyles = StyleSheet.create({
   },
   policyView: {
     gap: spacing.sm,
+    flexDirection: "row",
+    justifyContent: "space-between",
     marginTop: spacing.sm,
     marginBottom: spacing.sm,
     fontFamily: "Manrope",

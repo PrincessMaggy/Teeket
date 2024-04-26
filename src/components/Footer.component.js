@@ -1,20 +1,69 @@
-import React from "react";
+import React, { useState } from "react";
 import { FooterComponentStyles } from "../styles/footerComponent.style";
-import { View, Text, Image } from "react-native";
+import { View, Text, Image, TouchableOpacity } from "react-native";
+import { MaterialIcons } from "@expo/vector-icons";
 
 export const FooterComponent = () => {
+  const [organizerMenuOpen, setOrganizerMenuOpen] = useState(false);
+  const [attendeeMenuOpen, setAttendeeMenuOpen] = useState(false);
+
+  const toggleOrganizerMenu = () => {
+    setOrganizerMenuOpen(!organizerMenuOpen);
+  };
+
+  const toggleAttendeeMenu = () => {
+    setAttendeeMenuOpen(!attendeeMenuOpen);
+  };
+
   return (
     <View style={FooterComponentStyles.ctaContainer}>
       <Image source={require("../../assets/img/CTA.png")} />
+      <Text style={FooterComponentStyles.textStyle}>MENU</Text>
       <View style={FooterComponentStyles.menuView}>
-        <Text style={FooterComponentStyles.textStyle}>MENU</Text>
-        <Text style={FooterComponentStyles.textStyle}>For Organizers</Text>
-        <Text style={FooterComponentStyles.textStyle}>How to create event</Text>
-        <Text style={FooterComponentStyles.textStyle}>Event FAQs</Text>
-        <Text style={FooterComponentStyles.textStyle}>For Attendees</Text>
+        <TouchableOpacity onPress={toggleOrganizerMenu}>
+          <View
+            style={{ flexDirection: "row", justifyContent: "space-between" }}
+          >
+            <Text style={FooterComponentStyles.textStyle}>For Organizers</Text>
+            <MaterialIcons
+              name={
+                organizerMenuOpen ? "keyboard-arrow-down" : "keyboard-arrow-up"
+              }
+              size={24}
+              color="#fff"
+            />
+          </View>
+        </TouchableOpacity>
+        {organizerMenuOpen && (
+          <>
+            <Text style={FooterComponentStyles.textStyle}>
+              How to create event
+            </Text>
+            <Text style={FooterComponentStyles.textStyle}>Event FAQs</Text>
+          </>
+        )}
+        <TouchableOpacity onPress={toggleAttendeeMenu}>
+          <View
+            style={{ flexDirection: "row", justifyContent: "space-between" }}
+          >
+            <Text style={FooterComponentStyles.textStyle}>For Attendees</Text>
+            <MaterialIcons
+              name={
+                attendeeMenuOpen ? "keyboard-arrow-down" : "keyboard-arrow-up"
+              }
+              size={24}
+              color="#fff"
+            />
+          </View>
+        </TouchableOpacity>
+        {attendeeMenuOpen && (
+          <>
+            <Text style={FooterComponentStyles.textStyle}>Item 1</Text>
+            <Text style={FooterComponentStyles.textStyle}>Item 2</Text>
+          </>
+        )}
       </View>
       <View style={FooterComponentStyles.hr} />
-
       <View style={FooterComponentStyles.contactViewCont}>
         <View style={FooterComponentStyles.contactView}>
           <Image source={require("../../assets/img/PhoneCall.png")} />
@@ -26,14 +75,13 @@ export const FooterComponent = () => {
         </View>
       </View>
       <View style={FooterComponentStyles.hr} />
-
       <View style={FooterComponentStyles.policyView}>
         <Text style={FooterComponentStyles.textStyle}>Privacy Policy</Text>
         <Text style={FooterComponentStyles.textStyle}>Terms of use</Text>
-        <Text style={FooterComponentStyles.textStyle}>
-          Teeket Inc. All rights reserved.
-        </Text>
       </View>
+      <Text style={FooterComponentStyles.textStyle}>
+        Teeket Inc. All rights reserved.
+      </Text>
     </View>
   );
 };

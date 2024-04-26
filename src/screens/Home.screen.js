@@ -21,7 +21,7 @@ export const Home = () => {
         <HeaderComponent />
 
         <View style={HomeStyles.mainContainer}>
-          <Text style={HomeStyles.title}>Login or signup to continue</Text>
+          <Text style={HomeStyles.title}>Login or sign up to continue</Text>
 
           <View style={HomeStyles.googleBtn}>
             <Image
@@ -29,7 +29,10 @@ export const Home = () => {
               style={HomeStyles.googleImg}
               resizeMode="contain"
             />
-            <Text labelStyle={{ color: colorTheme.brand.secondary }}>
+            <Text
+              labelStyle={{ color: colorTheme.brand.secondary }}
+              style={{ fontFamily: "ManropeBold" }}
+            >
               Continue with Google
             </Text>
           </View>

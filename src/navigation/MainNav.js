@@ -6,7 +6,7 @@ import { AppNav } from "./AppNav";
 import { View } from "react-native";
 
 export const MainNav = () => {
-  const [isAuthenticated, setIsAuthenticated] = useState(false);
+  const [isAuthenticated, setIsAuthenticated] = useState(true);
 
   //   useEffect(() => {
   //     checkUserSession();

@@ -32,6 +32,7 @@ export const LandingStyles = StyleSheet.create({
     padding: spacing.sm / 2,
     borderRadius: 10,
     fontFamily: "Manrope",
+    width: Dimensions.get("window").width - spacing.xxl,
   },
   btnval: {
     backgroundColor: colorTheme.bg.primary,
@@ -40,6 +41,7 @@ export const LandingStyles = StyleSheet.create({
     padding: spacing.sm / 2,
     borderRadius: 10,
     fontFamily: "Manrope",
+    width: Dimensions.get("window").width - spacing.xxl,
   },
   paragraph: {
     color: colorTheme.text.inverse,

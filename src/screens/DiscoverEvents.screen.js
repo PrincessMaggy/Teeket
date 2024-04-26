@@ -5,8 +5,6 @@ import { FooterComponent } from "../components/Footer.component";
 import { SearchEvent } from "../components/Search.component";
 import { discoverEventStyles } from "../styles/discoverEvent.style";
 import { DiscoverCard } from "../components/DiscoverCard.component";
-import { Button } from "react-native-paper";
-import { colorTheme } from "../utility/themes/colors";
 
 export const DiscoverEvents = () => {
   return (

@@ -12,7 +12,7 @@ export const HomeStyles = StyleSheet.create({
     fontSize: 20,
     marginTop: spacing.sm,
     marginBottom: spacing.sm,
-    fontFamily: "Manrope",
+    fontFamily: "ManropeBold",
   },
   mainContainer: {
     padding: spacing.sm,
@@ -54,7 +54,7 @@ export const HomeStyles = StyleSheet.create({
     borderRadius: spacing.sm,
     height: spacing.xxl,
     color: colorTheme.text.tertiary,
-    fontFamily: "Manrope",
+    fontFamily: "ManropeBold",
   },
   paragraph: {
     marginTop: spacing.md,

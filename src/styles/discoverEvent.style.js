@@ -38,7 +38,7 @@ export const discoverEventStyles = StyleSheet.create({
   },
   tabOne: {
     backgroundColor: "#FBBF0A",
-    borderRadius: 20,
+    borderRadius: spacing.md,
     padding: spacing.md,
     gap: spacing.sm,
     width: 164,
@@ -49,7 +49,7 @@ export const discoverEventStyles = StyleSheet.create({
   },
   tabFour: {
     backgroundColor: "#FFC971",
-    borderRadius: 20,
+    borderRadius: spacing.md,
     padding: spacing.md,
     gap: spacing.sm,
     width: 164,
@@ -60,7 +60,7 @@ export const discoverEventStyles = StyleSheet.create({
   },
   tabTwo: {
     backgroundColor: "#EEE",
-    borderRadius: 20,
+    borderRadius: spacing.md,
     padding: spacing.md,
     gap: spacing.sm,
     width: 164,
@@ -71,7 +71,7 @@ export const discoverEventStyles = StyleSheet.create({
   },
   tabThree: {
     backgroundColor: "#B0E298",
-    borderRadius: 20,
+    borderRadius: spacing.md,
     padding: spacing.md,
     gap: spacing.sm,
     width: 164,
@@ -88,17 +88,18 @@ export const discoverEventStyles = StyleSheet.create({
     justifyContent: "space-between",
     gap: spacing.sm,
     borderColor: "#F1F1F1",
-    borderWidth: 3,
+    borderWidth: spacing.sm / 4,
     backgroundColor: "#fff",
     shadowColor: "#000",
     shadowOffset: {
       width: 0,
-      height: 4,
+      height: spacing.sm,
     },
     shadowOpacity: 0.1,
     shadowRadius: 8,
     elevation: 5, // Elevation for Android (overrides shadow properties)
     padding: 20,
+    marginTop: spacing.md,
   },
   cardImg: {
     width: 160,
